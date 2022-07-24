@@ -3,15 +3,15 @@ import Messages from "./components/Messages";
 import SendMessage from "./components/SendMessage";
 import './App.css';
 
-const conn = new WebSocket("ws://localhost:3000/");
+const conn = new WebSocket("ws://localhost:9000/");
 
 let userName = '';
 conn.onopen =  () => {
-    userName = prompt("Как вас зовут?");
+    userName = prompt("What is your name?");
 };
 
 conn.onclose = () => {
-  alert("Подключение окончено");
+  alert("Websocket off");
 };
 
 function App() {

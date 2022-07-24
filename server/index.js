@@ -30,7 +30,7 @@ webSocketServer.on('connection', ws => {
     ws.send(JSON.stringify(data));
 });
 
-server.listen(3000, () => console.log("Server started"))
+server.listen(9000, () => console.log("Server started on port 9000"))
 
 
 
