@@ -11,7 +11,7 @@ const SendMessage = ({sendMessage}) => {
     return (
         <div>
             <input value={message} onChange={e => setMessage(e.target.value)} />
-            <button onClick={onSend}>Отправить</button>
+            <button onClick={onSend}>Send</button>
         </div>
     )
 };
